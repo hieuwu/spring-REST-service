@@ -11,8 +11,9 @@ class LoadDatabase {
     @Bean
     CommandLineRunner initDatabase(EmployeeRepository repostory) {
         return args -> {
-            repostory.save(new Employee("Bill Babin", "developer"));
-            repostory.save(new Employee("Barack Obama", "designer"));
+            repostory.save(new Employee("talor", "swift", "thief"));
+            repostory.save(new Employee("Bilbo", "Baggins", "burglar"));
+            repostory.save(new Employee("Barack","Obama", "designer"));
         };
     }
 }
